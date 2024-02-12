@@ -7,7 +7,7 @@ metadata:
 spec:
   strategy:
     rollingUpdate:
-      maxSurge: 1
+      maxSurge: 10
       maxUnavailable: 0
     type: RollingUpdate
   replicas: {{ .Values.replicas }}
